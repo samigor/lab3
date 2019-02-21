@@ -111,16 +111,58 @@ echo"много";
 
 					
 ?>
-                </div><!--//intro-->
+<p> Задача про массивы </p>
+<?PHP
+$arr = array ("Igor","root","3966");
+
+$arr [] = 25;
+$arr [] = true;
+$arr [8] = 88;
+$arr [] = 99;
+echo $arr [0];
+$result = count ($arr);
+echo "<br> $result ";
+?>
+<pre><?php print_r ($arr);?> </pre>
+<pre><?php var_dump ($arr);?> </pre>
+<?
+$arr2 = array (
+"kurort" => "Стрелковое",
+"length" => "50км",
+"sea" => "Азовское",
+"wc" => "true",
+true
+				);
+				echo $arr2 ["kurort"]. " <br>";
+				echo $arr2[0];
+?>
+<pre><?php var_dump ($arr2);?> </pre>
+<p>Упражнение с динамическим меню и массивом</p>
+
+<?
+$leftMenu = array (
+'home' => 'index.php',
+'about' => 'about.php',
+'contact' => 'contact.php',
+'table' => 'table.php',
+'calc' => 'calc.php',
+);
+
+?>
+
+  </div><!--//intro-->
                 <div id="cards-wrapper" class="cards-wrapper row">
                     <div class="item item-green col-md-4 col-sm-6 col-xs-6">
                         <div class="item-inner">
                             <div class="icon-holder">
                                 <i class="icon fa fa-paper-plane"></i>
                             </div><!--//icon-holder-->
-                            <h3 class="title">Quick Start</h3>
-                            <p class="intro">Demo example, consectetuer adipiscing elit</p>
-                            <a class="link" href="start.html"><span></span></a>
+                            <h3 class="title">Упражнение с динамическим меню и массивом</h3>
+                            	<li><a href= '<?= $leftMenu['home']?>'> Домой </a> </li>
+								<li><a href= '<?= $leftMenu['about']?>'> about </a> </li>
+								<li><a href= '<?= $leftMenu['contact']?>'> contact </a> </li>
+								<li><a href= '<?= $leftMenu['table']?>'> table </a> </li>
+								<li><a href= '<?= $leftMenu['calc']?>'> calc </a> </li>
                         </div><!--//item-inner-->
                     </div><!--//item-->
                     <div class="item item-pink item-2 col-md-4 col-sm-6 col-xs-6">
@@ -185,6 +227,7 @@ echo"много";
             <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
             
         </div><!--//container-->
+	
     </footer><!--//footer-->
     
      
