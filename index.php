@@ -216,7 +216,52 @@ $leftMenu = array (
                         </div><!--//item-inner-->
                     </div><!--//item-->
                 </div><!--//cards-->
-                
+                <p>Многомерный массив</p>
+
+<?PHP
+$arr3[0] = array(
+			"login" => "Vasya",
+			"pass" => "Vasya123",
+				);
+$arr3[1] = array(
+			"login" => "Petya",
+			"pass" => "Petya123",
+				);
+echo $arr3[1]["login"];
+?>
+
+   <p>Упражнение: Использование многомерного массива</p>
+   <?PHP
+$secondMenu = array (
+				array ('link'=>'Домой2', 'href' => 'index.php'),
+				array ('link'=>'О нас', 'href' => 'about.php'),
+				array ('link'=>'Контакты', 'href' => 'contacts.php'),
+				array ('link'=>'Таблица', 'href' => 'table.php'),
+				array ('link'=>'Калькулятор', 'href' => 'calc.php'),
+					);
+?>
+<li><a href ='<?= $secondMenu[0]['href']?>'><?= $secondMenu [0]['link']?></a></li>
+<li><a href ='<?= $secondMenu[1]['href']?>'><?= $secondMenu [1]['link']?></a></li>
+<li><a href ='<?= $secondMenu[2]['href']?>'><?= $secondMenu [2]['link']?></a></li>
+<li><a href ='<?= $secondMenu[3]['href']?>'><?= $secondMenu [3]['link']?></a></li>
+<li><a href ='<?= $secondMenu[4]['href']?>'><?= $secondMenu [4]['link']?></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div><!--//container-->
         </section><!--//cards-section-->
     </div><!--//page-wrapper-->
