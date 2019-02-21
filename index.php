@@ -1,7 +1,4 @@
-<?
-echo "привет";
-echo "как дела?";
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
@@ -57,8 +54,9 @@ echo "как дела?";
                 <h2 class="title">Курсы PHP с WEZOM</h2>
                 <div class="intro">
                     <p>Лабораторная работа №3</p>
+ <p>Задача 1</p>
 <?php
- 
+
 $morning = "Доброе утро!";
 $day = "Добрый день!";
 $evening = "Добрый вечер!";
@@ -88,6 +86,31 @@ echo "Время: $chasov:$minyt, $hello <br>";
 					
 					echo "$welcome , Гость";
 					?>
+					<p>Задача 2</p>
+					<?
+					$s = ini_get ('upload_max_filesize');
+					echo "Максимальный размер загружаемого файла равен $s <br> или ";
+			$dsize=$s;
+			settype($dsize, "integer");
+			//echo $dsize;
+$size= $s{strlen($s)-1};
+//echo $size;
+switch ($size) {
+	case G:
+	echo "$dsize * 1024 * 1024 * 1024 байт";
+	break;
+	case M:
+	echo $dsize * 1024 * 1024 ." байт";
+	break;
+	case k:
+	echo $dsize * 1024;
+	break;
+	default: 
+echo"много";	
+}
+
+					
+?>
                 </div><!--//intro-->
                 <div id="cards-wrapper" class="cards-wrapper row">
                     <div class="item item-green col-md-4 col-sm-6 col-xs-6">
