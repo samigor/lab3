@@ -239,6 +239,8 @@ $secondMenu = array (
 				array ('link'=>'Таблица', 'href' => 'table.php'),
 				array ('link'=>'Калькулятор', 'href' => 'calc.php'),
 					);
+					echo current($secondMenu[0]). "<br>";
+						echo end($secondMenu[3]);
 ?>
 <li><a href ='<?= $secondMenu[0]['href']?>'><?= $secondMenu [0]['link']?></a></li>
 <li><a href ='<?= $secondMenu[1]['href']?>'><?= $secondMenu [1]['link']?></a></li>
@@ -247,8 +249,19 @@ $secondMenu = array (
 <li><a href ='<?= $secondMenu[4]['href']?>'><?= $secondMenu [4]['link']?></a></li>
 
 
-
-
+ <p><b>Упражнение: бактерии.</b></p>
+<?
+$x =  rand(1, 50);
+$y =  rand(1, 50);
+echo "Начальное количество бактерий - $x" . "<br>" ."Начальное количество минут - $y";
+for ($i=1; $i<=$y; $i++) 
+{
+	$x = $x * 2;
+	
+	
+}
+echo "<br>В конце цикла количество бактерий равно <b> $x </b>";
+?>
 
 
 
