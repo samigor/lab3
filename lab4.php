@@ -83,6 +83,60 @@ for ($i = 1; $i <=$x ; $i++)
 $min = min ($resultarr);
 $max = max ($resultarr);
 echo "<br>Минимальное значение функции: $min <br> Максимальное  значение функции: $max";
+unset ($i);
+?>
+<h2>Упражнение 
+Вывод нечетных чисел из заданного диапазона
+</h2>
+<?PHP
+
+for ($i =-1; $i <= 50; $i++)
+{
+		echo "$i <br>";
+		$i++;
+}
+unset ($i);
+?>
+<h2>Вывод строки посимвольно
+</h2>
+<?PHP
+$var = 'HELLO';
+$i=0;
+$dl=strlen($var);
+while ($i <=$dl){
+	echo "$var[$i]<br>";
+	$i++;
+}unset ($i);
+?>	
+<h2>Создание динамической таблицы
+</h2><?PHP
+$cols =10;
+$rows=10;
+
+echo "<table border='1' width = '200>'";
+for ($i=1;$i<=$rows;$i++){
+	echo "<tr>";
+	for ($j=1;$j<=$cols;$j++)
+	{if ($i==1 OR $j==1)
+		{
+			echo "<th>";
+		}
+		else {
+			echo "<td>";
+	}
+	echo $i*$j;
+	if ($i==1 OR $j==1) 
+	{
+		echo "</th>";
+	}
+	else {
+		echo "</td>";
+	}
+}
+echo "</tr>";
+
+}
+echo "</table>";
 ?>
 
             </div><!--//container-->
