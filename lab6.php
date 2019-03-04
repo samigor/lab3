@@ -45,7 +45,7 @@
                     <p>Тема для свободного творчества в лабораторных и домашних заданиях</p>
                     <p>Designed with <i class="fa fa-heart"></i> for developers</p>
                 </div><!--//tagline-->
-              
+                           
             </div><!--//container-->
         </header><!--//header-->
         
@@ -55,41 +55,38 @@
                 <div class="intro">
                    
 <br>
-<br> <p><h1>Лабораторная работа №5</h1></p>
-<h2>Написать 2 функции сортировки массивов, используя алгоритмы «Сортировка обменами», «Сортировка вставками»
+<br> <p><h1>Лабораторная работа №6</h1></p>
+<h2>
 
  </h2>
 <?PHP
-$arr= array (5,13,25,2,11,7,88,52,36,47,95,36,14,2,8,35,4,6,8,43);
-print_r ($arr);
 
-
-	$x= count ($arr);
-	echo $x;
-	
-	for ($i=0; $i<=$x-1; $i++)
-	{
-		if ($arr[i]>$arr[$i+1]){
-		$temp = $arr[i];
-		$arr[i] = $arr[$i+1];
-		$arr[$i+1] = $temp;
-		}
-		//echo "$arr[$i] <br>";
-	}
-	//else continue;
-	print_r ($arr);
-
-/*function sortObmen ()
-{
-	
-}
-sortObmen ();*/
 ?>
 
             </div><!--//container-->
         </section><!--//cards-section-->
     </div><!--//page-wrapper-->
-    
+     <?PHP
+$menu = array (
+					'lab1' => array ('title'=>'Лаба1', 'href'=>'index.php'),
+					'lab2' => array ('title'=>'Лаба2', 'href'=>'lab2.php'),
+					'lab3' => array ('title'=>'Лаба3', 'href'=>'lab3.php'),
+					'lab4' => array ('title'=>'Лаба4', 'href'=>'lab4.php'),
+					'lab5' => array ('title'=>'Лаба5', 'href'=>'lab5.php'),
+					'lab6' => array ('title'=>'Лаба6', 'href'=>'lab6.php'),
+);
+echo "<ul>";
+foreach ($menu as $array){
+	?>
+	<li>
+	<a href = <?php echo $array['href'];?>>
+	<?php echo $array['title'];?>
+	
+	<?PHP
+}
+echo "</ul>";
+
+?>
     <footer class="footer text-center">
         <div class="container">
             <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
