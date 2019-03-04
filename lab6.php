@@ -59,6 +59,25 @@
 <h2>
 
  </h2>
+
+ <?php
+echo "<h2>Задача 'Ханойские башни'</h2><br>";
+$i = 1;                                              
+function hanoi($plates, $from, $to) {            
+    global $i;                                             
+        while($plates > 0) {
+        $i++;
+        $using = 6 - ($from + $to);     
+        hanoi(--$plates, $from, $using);          
+        print "Перенести  кольцо с $from на $to; <br>";
+        $from = $using;
+     }
+}
+ 
+hanoi(5, 1, 3); 
+print " Количество шагов: $i";
+    
+?>
 <?PHP
 
 ?>
