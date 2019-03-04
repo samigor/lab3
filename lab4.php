@@ -138,7 +138,29 @@ echo "</tr>";
 }
 echo "</table>";
 ?>
+<h2>Создание динамического меню навигации по сайту
 
+</h2>
+<?PHP
+$menu = array (
+					'lab1' => array ('title'=>'Лаба1', 'href'=>'index.php'),
+					'lab2' => array ('title'=>'Лаба2', 'href'=>'lab2.php'),
+					'lab3' => array ('title'=>'Лаба3', 'href'=>'lab3.php'),
+					'lab4' => array ('title'=>'Лаба4', 'href'=>'lab4.php'),
+					'lab5' => array ('title'=>'Лаба5', 'href'=>'lab5.php'),
+);
+echo "<ul>";
+foreach ($menu as $array){
+	?>
+	<li>
+	<a href = <?php echo $array['href'];?>>
+	<?php echo $array['title'];?>
+	
+	<?PHP
+}
+echo "</ul>";
+
+?>
             </div><!--//container-->
         </section><!--//cards-section-->
     </div><!--//page-wrapper-->
