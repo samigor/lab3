@@ -155,11 +155,27 @@ foreach ($menu as $array){
 	<li>
 	<a href = <?php echo $array['href'];?>>
 	<?php echo $array['title'];?>
-	
+	</li>
 	<?PHP
 }
 echo "</ul>";
 
+?>
+
+<h2>Потерянная задача про Фибоначчи
+
+</h2>
+<?PHP
+$a0= '1';
+$a1= '1';
+$n= 2000;
+$fib = $a0+ $a1;
+while ($fib<$n){
+	$a0 = $a1;
+	$a1 = $fib;
+	echo $fib. " ";
+	$fib = $a0+ $a1;
+}
 ?>
             </div><!--//container-->
         </section><!--//cards-section-->
