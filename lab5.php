@@ -165,8 +165,8 @@ drawMenu($menu);
                   <?PHP
 $menu = array (
 					'lab1' => array ('title'=>'Лаба1', 'href'=>'index.php'),
-					'lab2' => array ('title'=>'Лаба2', 'href'=>'lab2.php'),
-					'lab3' => array ('title'=>'Лаба3', 'href'=>'lab3.php'),
+					'lab2' => array ('title'=>'Лаба2', 'href'=>'index.php'),
+					'lab3' => array ('title'=>'Лаба3', 'href'=>'index.php'),
 					'lab4' => array ('title'=>'Лаба4', 'href'=>'lab4.php'),
 					'lab5' => array ('title'=>'Лаба5', 'href'=>'lab5.php'),
 					'lab6' => array ('title'=>'Лаба6', 'href'=>'lab6.php'),
