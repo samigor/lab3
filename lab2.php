@@ -35,7 +35,7 @@ unset ($i);
 
 for ($i =-1; $i <= 50; $i++)
 {
-		echo "$i  ";
+		echo "$i <br>";
 		$i++;
 }
 unset ($i);
@@ -47,7 +47,7 @@ $var = 'HELLO';
 $i=0;
 $dl=strlen($var);
 while ($i <=$dl){
-	echo "$var[$i] ";
+	echo "$var[$i]<br>";
 	$i++;
 }unset ($i);
 ?>	
@@ -96,7 +96,7 @@ echo "<ul>";
 foreach ($menu as $array){
 	?>
 	<li>
-	<a href = <?php echo $array['href'];?>></a>
+	<a href = <?php echo $array['href'];?>>
 	<?php echo $array['title'];?>
 	</li>
 	<?PHP
